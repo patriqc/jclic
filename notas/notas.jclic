@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="notas" version="0.1.3">
+ <settings>
+  <title>notas</title>
+  <revision description="created" date="10/13/09" />
+  <author name="Musicampoamor" />
+  <descriptors />
+  <cover file="pentagrama2.gif" />
+  <thumb file="pentagrama2.gif" />
+  <icon16 file="pentagrama2.gif" />
+  <icon72 file="pentagrama2.gif" />
+  <icon192 file="pentagrama2.gif" />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="puzzledoble" />
+  <item name="ident_notas" delay="1" />
+  <item name="ident_notas_2" delay="1" />
+  <item name="ident_notas_3" delay="1" />
+  <item name="ident_notas_4" delay="1" />
+  <item name="ident_notas_5" />
+  <item name="ident_notas_6" delay="1" />
+  <item name="ident_notas_7" delay="1" />
+  <item name="ordena las notas" delay="1" />
+  <item name="juego de memoria_2" delay="1" />
+  <item name="ASOCIA LAS NOTAS" delay="1" />
+  <item name="ASOCIA LAS NOTAS_4" delay="1" />
+  <item name="ASOCIA LAS NOTAS_3" delay="1" />
+  <item name="ASOCIA LAS NOTAS_2" delay="1" />
+  <item name="ASOCIA LAS NOTAS_6" delay="1" />
+  <item name="ASOCIA LAS NOTAS_5" />
+  <item name="SOPA" delay="1" />
+  <item name="juego de memoria_3" delay="1" />
+  <item name="juego de memoria" delay="1" />
+  <item name="PUZZLE" delay="1" />
+  <item name="ESDO" delay="1" />
+  <item name="ESDO_2" delay="1" />
+  <item name="ESDO_3" delay="1" />
+  <item name="ESDO_4" delay="1" />
+  <item name="ESDO_5" />
+  <item name="ESDO_6" />
+  <item name="ESDO_7" />
+  <item name="NOTAS" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA LAS NOTAS" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="291.0" cellHeight="152.0" border="true" id="primary">
+    <style>
+     <color inactive="0x0037FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFF0000" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+     <p>DO</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0x0000FF" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+     <p>RE</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="252.0" cellHeight="151.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="i01-do" />
+    <cell image="i01-re" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA LAS NOTAS_2" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="291.0" cellHeight="152.0" border="true" id="primary">
+    <style>
+     <color inactive="0x0037FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xCC00CC" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="si.wav" />
+     <p>SI</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFF00" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+     <p>SOL</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="252.0" cellHeight="151.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="si.gif" />
+    <cell image="i01-sol" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA LAS NOTAS_3" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="291.0" cellHeight="152.0" border="true" id="primary">
+    <style>
+     <color inactive="0x0037FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFF00" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+     <p>SOL</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFF6600" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+     <p>LA</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="252.0" cellHeight="151.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="i01-sol" />
+    <cell image="i01-la" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA LAS NOTAS_4" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="291.0" cellHeight="152.0" border="true" id="primary">
+    <style>
+     <color inactive="0x0037FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFF33CC" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+     <p>MI</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0x0000FF" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+     <p>RE</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="252.0" cellHeight="151.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="i01-mi" />
+    <cell image="i01-re" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA LAS NOTAS_5" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="291.0" cellHeight="152.0" border="true" id="primary">
+    <style>
+     <color inactive="0x0037FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFF33CC" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+     <p>MI</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0x00CC00" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+     <p>FA</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="252.0" cellHeight="151.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="i01-mi" />
+    <cell image="i01-fa" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="ASOCIA LAS NOTAS_6" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="291.0" cellHeight="152.0" border="true" id="primary">
+    <style>
+     <color inactive="0x0037FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFF00" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+     <p>SOL</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0x00CC00" inactive="0x0037FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+     <p>FA</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="252.0" cellHeight="151.0" border="true" id="secondary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="i01-sol" />
+    <cell image="i01-fa" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="ESDO" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ESCRIBE SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="302.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" border="true" image="DO1.png">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="306.0" cellHeight="168.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>DO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="ESDO_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ESCRIBE SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="302.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" border="true" image="RE.gif">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="306.0" cellHeight="168.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RE</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="RE.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="ESDO_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ESCRIBE SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="302.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" border="true" image="MI.gif">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="306.0" cellHeight="168.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>MI</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="MI.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="ESDO_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ESCRIBE SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="302.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" border="true" image="FA.png">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="306.0" cellHeight="168.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>FA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="FA.png" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="ESDO_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ESCRIBE SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="302.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" border="true" image="SOL.gif">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" autoStart="true" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="306.0" cellHeight="168.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>SOL</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="SOL.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="ESDO_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ESCRIBE SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="302.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" border="true" image="LA.png">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="306.0" cellHeight="168.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>LA</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="LA.png" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="ESDO_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ESCRIBE SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFF0033" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="302.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" border="true" image="SI.png">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="si.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="306.0" cellHeight="168.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>SI</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="SI.png" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="NOTAS" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="706.0" cellHeight="433.0" border="true">
+    <style margin="50" borderStroke="10.0" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0x00CC00" inactive="0x0037FF" />
+     </style>
+     <media type="URL" level="1" file="http://www.cuchuflete.es/aula3/recursos/las-notas-musicales/" />
+     <p>JUEGO DE NOTAS</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="PUZZLE" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PUZZLE</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>VALE</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="pentagrama2.gif">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="SOPA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>LAS NOTAS MUSICALES</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x379BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <textGrid rows="5" columns="6" cellWidth="111.0" cellHeight="81.0" border="true">
+    <style borderStroke="4.2" markerStroke="2.7">
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>FACSS</row>
+     <row>OLMIO</row>
+     <row>LAI*L</row>
+     <row>**DO*</row>
+     <row>RE***</row>
+     <row>**FOL</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">DO</clue>
+    <clue id="1">RE</clue>
+    <clue id="2">MI</clue>
+    <clue id="3">FA</clue>
+    <clue id="4">SOL</clue>
+    <clue id="5">LA</clue>
+    <clue id="6">SI</clue>
+   </clues>
+  </activity>
+  <activity class="@panels.Identify" name="ident_notas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>DO </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>BRAVO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="186.0" cellHeight="212.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="1" image="DO1.png">
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+    </cell>
+    <cell id="0" image="MI.gif" />
+    <cell id="0" image="RE.gif" />
+    <cell id="1" image="DO1.png">
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+    </cell>
+    <cell id="0" image="LA.png" />
+    <cell id="0" image="FA.png" />
+    <cell id="1" image="DO1.png">
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+    </cell>
+    <cell id="0" image="MI.gif" />
+    <cell id="0" image="LA.png" />
+    <cell id="1" image="DO1.png">
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="ident_notas_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RE</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="186.0" cellHeight="212.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="1" image="RE.gif">
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+    </cell>
+    <cell id="0" image="MI.gif" />
+    <cell id="1" image="RE.gif">
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+    </cell>
+    <cell id="0" image="DO1.png" />
+    <cell id="0" image="LA.png" />
+    <cell id="1" image="RE.gif">
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+    </cell>
+    <cell id="0" image="DO1.png" />
+    <cell id="0" image="MI.gif" />
+    <cell id="0" image="LA.png" />
+    <cell id="1" image="RE.gif">
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="ident_notas_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>MI</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>SUPER</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="186.0" cellHeight="212.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0" image="SOL.gif" />
+    <cell id="1" image="MI.gif">
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+    </cell>
+    <cell id="0" image="RE.gif" />
+    <cell id="0" image="DO1.png" />
+    <cell id="1" image="MI.gif">
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+    </cell>
+    <cell id="1" image="MI.gif">
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+    </cell>
+    <cell id="0" image="DO1.png" />
+    <cell id="1" image="MI.gif">
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+    </cell>
+    <cell id="0" image="LA.png" />
+    <cell id="0" image="RE.gif" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="ident_notas_4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>FA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>GUAY</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="186.0" cellHeight="212.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0" image="SOL.gif" />
+    <cell id="1" image="FA.png">
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+    </cell>
+    <cell id="0" image="RE.gif" />
+    <cell id="1" image="FA.png">
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+    </cell>
+    <cell id="0" image="LA.png" />
+    <cell id="1" image="FA.png">
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+    </cell>
+    <cell id="0" image="DO1.png" />
+    <cell id="1" image="FA.png">
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+    </cell>
+    <cell id="0" image="LA.png" />
+    <cell id="0" image="RE.gif" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="ident_notas_5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>SOL</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>CHACHI</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="186.0" cellHeight="212.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="1" image="SOL.gif">
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+    </cell>
+    <cell id="0" image="MI.gif" />
+    <cell id="0" image="RE.gif" />
+    <cell id="0" image="DO1.png" />
+    <cell id="1" image="SOL.gif">
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+    </cell>
+    <cell id="0" image="FA.png" />
+    <cell id="1" image="SOL.gif">
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+    </cell>
+    <cell id="0" image="MI.gif" />
+    <cell id="1" image="SOL.gif">
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+    </cell>
+    <cell id="0" image="RE.gif" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="ident_notas_6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>LA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="186.0" cellHeight="212.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0" image="SOL.gif" />
+    <cell id="1" image="LA.png">
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+    </cell>
+    <cell id="0" image="RE.gif">
+     <style borderStroke="3.0" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="DO1.png" />
+    <cell id="1" image="LA.png">
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+    </cell>
+    <cell id="1" image="LA.png">
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+    </cell>
+    <cell id="0" image="DO1.png" />
+    <cell id="0" image="MI.gif" />
+    <cell id="1" image="LA.png">
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+    </cell>
+    <cell id="0" image="RE.gif" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="ident_notas_7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>SI</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="28" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>PASA</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009BFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0037FF" border="true" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="186.0" cellHeight="212.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="1" image="SI.png">
+     <media type="PLAY_AUDIO" level="1" file="si.wav" />
+    </cell>
+    <cell id="1" image="SI.png">
+     <media type="PLAY_AUDIO" level="1" file="si.wav" />
+    </cell>
+    <cell id="0" image="RE.gif" />
+    <cell id="0" image="DO1.png" />
+    <cell id="0" image="LA.png" />
+    <cell id="0" image="FA.png" />
+    <cell id="1" image="SI.png">
+     <media type="PLAY_AUDIO" level="1" file="si.wav" />
+    </cell>
+    <cell id="1" image="SI.png">
+     <media type="PLAY_AUDIO" level="1" file="si.wav" />
+    </cell>
+    <cell id="0" image="LA.png" />
+    <cell id="0" image="RE.gif" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="juego de memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>UNE LA NOTA CON SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="36" />
+      <color foreground="0xFF0000" background="0x0000FF" />
+     </style>
+     <p>¡ GENIAL !</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0000FF" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="696.0" cellHeight="297.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="i01-do">
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+    </cell>
+    <cell image="i01-re">
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+    </cell>
+    <cell image="i01-mi">
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+    </cell>
+    <cell image="i01-fa">
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+    </cell>
+    <cell image="i01-sol">
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+    </cell>
+    <cell image="i01-la">
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF0000" alternative="0xFFFFFF" />
+     </style>
+     <p>DO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x0000CC" alternative="0xFFFFFF" />
+     </style>
+     <p>RE</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF00FF" alternative="0xFFFFFF" />
+     </style>
+     <p>MI</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x00CC00" alternative="0xFFFFFF" />
+     </style>
+     <p>FA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFFFF00" alternative="0xFFFFFF" />
+     </style>
+     <p>SOL</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF6600" alternative="0xFFFFFF" />
+     </style>
+     <p>LA</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="juego de memoria_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>UNE LA NOTA CON SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="36" />
+      <color foreground="0xFF0000" background="0x0000FF" />
+     </style>
+     <p>¡ GENIAL !</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0000FF" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="696.0" cellHeight="297.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF0000" alternative="0xFFFFFF" />
+     </style>
+     <p>DO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF00FF" alternative="0xFFFFFF" />
+     </style>
+     <p>MI</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFFFF33" alternative="0xFFFFFF" />
+     </style>
+     <p>SOL</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x0000FF" alternative="0xFFFFFF" />
+     </style>
+     <p>RE</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x33CC00" alternative="0xFFFFFF" />
+     </style>
+     <p>FA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF6600" alternative="0xFFFFFF" />
+     </style>
+     <p>SI</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="juego de memoria_3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>UNE LA NOTA CON SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="36" />
+      <color foreground="0xFF0000" background="0x0000FF" />
+     </style>
+     <p>¡ GENIAL !</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0000FF" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="696.0" cellHeight="297.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF0000" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+     <p>DO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF00FF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+     <p>MI</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFFFF33" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+     <p>SOL</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x0000FF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+     <p>RE</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0x33CC00" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+     <p>FA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color foreground="0xFFFFFF" background="0xFF6600" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+     <p>LA</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="DO1.png">
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+    </cell>
+    <cell image="MI.gif">
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+    </cell>
+    <cell image="SOL.gif">
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+    </cell>
+    <cell image="RE.gif">
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+    </cell>
+    <cell image="FA.png">
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+    </cell>
+    <cell image="LA.png">
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="ordena las notas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>ORDENA LAS NOTAS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>BIEN</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0033FF" border="true" />
+   </settings>
+   <cells rows="1" cols="7" cellWidth="89.0" cellHeight="134.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFF0000" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="do.wav" />
+     <p>DO</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0x0033FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="re.wav" />
+     <p>RE</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFF33CC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mi.wav" />
+     <p>MI</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0x33CC00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="fa.wav" />
+     <p>FA</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="sol.wav" />
+     <p>SOL</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFF6600" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="la.wav" />
+     <p>LA</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xCC00CC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="si.wav" />
+     <p>SI</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzledoble" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="26" />
+      <color foreground="0xFFFFFF" background="0x0000FF" />
+     </style>
+     <p>COLOCA LAS NOTAS EN EL PENTAGRAMA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFF0000" />
+     </style>
+     <p>¡ FANTASTICO !</p>
+    </cell>
+   </messages>
+   <settings margin="10" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x0099FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0033FF" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="pentagrama2.gif">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" shadow="0x000000" inactive="0x0035FF" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">ellipse:0.293419,0.720365,0.096892,0.153495</shape>
+     <shape comment="2">ellipse:0.177331,0.788754,0.100548,0.156535</shape>
+     <shape comment="3">ellipse:0.400366,0.629179,0.096892,0.158055</shape>
+     <shape comment="4">ellipse:0.521938,0.559271,0.096892,0.155015</shape>
+     <shape comment="5">ellipse:0.634369,0.471125,0.09872,0.155015</shape>
+     <shape comment="6">ellipse:0.76234,0.399696,0.093236,0.155015</shape>
+     <shape comment="7">ellipse:0.883912,0.306991,0.095978,0.156535</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="i01-do" file="i01-c1.gif" animated="false" />
+  <media name="i01-fa" file="i01-f1.gif" animated="false" />
+  <media name="i01-la" file="i01-a1.gif" animated="false" />
+  <media name="i01-mi" file="i01-e1.gif" animated="false" />
+  <media name="i01-re" file="i01-d1.gif" animated="false" />
+  <media name="i01-sol" file="i01-g1.gif" animated="false" />
+  <media name="MI.gif" file="mi.gif" animated="false" />
+  <media name="pentagrama2.gif" file="pentagrama2.gif" animated="false" />
+  <media name="RE.gif" file="re.gif" animated="false" />
+  <media name="si.gif" file="b1.gif" animated="false" />
+  <media name="SOL.gif" file="sol.gif" animated="false" />
+  <media name="DO1.png" file="do1.png" />
+  <media name="FA.png" file="fa.png" />
+  <media name="LA.png" file="la.png" />
+  <media name="SI.png" file="si.png" />
+  <media name="do.wav" file="do.wav" />
+  <media name="fa.wav" file="fa.wav" />
+  <media name="la.wav" file="la.wav" />
+  <media name="mi.wav" file="mi.wav" />
+  <media name="re.wav" file="re.wav" />
+  <media name="si.wav" file="si.wav" />
+  <media name="sol.wav" file="sol.wav" />
+ </mediaBag>
+</JClicProject>
+

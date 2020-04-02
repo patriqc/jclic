@@ -1,0 +1,47 @@
+{
+  "title": "notas",
+  "author": "Musicampoamor",
+  "date": "13/10/09",
+  "description": {},
+  "license": {
+    "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "es"
+  ],
+  "cover": "pentagrama2.gif",
+  "thumbnail": "pentagrama2.gif",
+  "mainFile": "notas.jclic",
+  "activities": 28,
+  "mediaFiles": 22,
+  "totalSize": 3434250,
+  "files": [
+    "b1.gif",
+    "do.wav",
+    "do1.png",
+    "fa.png",
+    "fa.wav",
+    "i01-a1.gif",
+    "i01-c1.gif",
+    "i01-d1.gif",
+    "i01-e1.gif",
+    "i01-f1.gif",
+    "i01-g1.gif",
+    "imsmanifest.xml",
+    "index.html",
+    "la.png",
+    "la.wav",
+    "mi.gif",
+    "mi.wav",
+    "notas.jclic",
+    "notas.jclic.js",
+    "pentagrama2.gif",
+    "project.json",
+    "re.gif",
+    "re.wav",
+    "si.png",
+    "si.wav",
+    "sol.gif",
+    "sol.wav"
+  ]
+}
